@@ -1,4 +1,4 @@
 powerline
 =========
 
-powerline stuff
+Powerline configs for gnome-shell. Tested on Ubuntu-13.10.
