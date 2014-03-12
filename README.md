@@ -9,12 +9,15 @@ https://powerline.readthedocs.org/en/latest/
 
 Screenshots
 -----------
-* bash shell example:
+* bash shell example 1:
 ![bash shell look1](https://raw.github.com/adidenko/adidenko.github.io/master/images/powerline/powerline_shell.png)
-* bash shell example:
+* bash shell example 2:
 ![bash shell look2](https://raw.github.com/adidenko/adidenko.github.io/master/images/powerline/powerline_shell2.png)
-* vim statusline example:
-![vim look](https://raw.github.com/adidenko/adidenko.github.io/master/images/powerline/powerline_vim.png)
+* vim statusline example 1:
+![vim look1](https://raw.github.com/adidenko/adidenko.github.io/master/images/powerline/powerline_vim1.png)
+* vim statusline example 2:
+![vim look2](https://raw.github.com/adidenko/adidenko.github.io/master/images/powerline/powerline_vim2.png)
+
 
 Requirements
 ------------
