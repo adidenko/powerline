@@ -42,6 +42,8 @@ wget -O ~/.fonts.conf.d/10-powerline-symbols.conf \
 https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
 ```
 
+You may need to restart your terminal emulator in order to apply changes.
+
 ### Installing and configuring powerline shell prompt
 On a host you want to enable **powerline** shell prompt run the following commands under needed shell user, this user should have ```bash``` shell (does not require sudo privileges, but requires ```pip```):
 
