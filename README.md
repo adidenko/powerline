@@ -50,8 +50,7 @@ echo -e "python powerline_setup()\npython del powerline_setup" >> ~/.vimrc
 
 # enable in bash
 echo export PATH="\"\$PATH:$(readlink -f ~/.local/bin)\"" >> ~/.bashrc
-echo ". $(readlink -f ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh)" \
->> ~/.bashrc
+echo ". $(readlink -f ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh)" >> ~/.bashrc
 
 # configure gnome-shell profiles
 sed -i '1i term screen-256color' ~/.screenrc
