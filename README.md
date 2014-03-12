@@ -68,3 +68,10 @@ If you're not using screen, you may need to set your ```TERM``` env variable to 
 ```bash
 export TERM=xterm-256color
 ```
+
+Or you can automate this via ```.bashrc``` file:
+
+```bash
+echo 'if [ "$TERM" != "screen-256color" ] ; then' >> ~/.bashrc
+echo -e "\texport TERM=xterm-256color\nfi" >> ~/.bashrc
+```
