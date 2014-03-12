@@ -26,7 +26,7 @@ Requirements
 Installation
 ------------
 
-Just run the following commands under the user you want to configure powerline for (does not require sudo privileges).
+**Ubuntu 13.10:** Just run the following commands under the user you want to configure powerline for (does not require sudo privileges):
 
 ```bash
 pip install --user git+git://github.com/Lokaltog/powerline
