@@ -30,11 +30,7 @@
 				"exclude_modes": ["nc"],
 				"priority": 10
 			},
-			{
-				"name": "branch",
-				"exclude_modes": ["nc"],
-				"priority": 30
-			},
+
 			{
 				"name": "readonly_indicator",
 				"draw_soft_divider": false,
@@ -69,6 +65,11 @@
 				"module": "powerline.segments.plugin.tagbar",
 				"name": "current_tag",
 				"draw_soft_divider": false,
+				"priority": 50
+			},
+			{
+				"name": "branch",
+				"exclude_modes": ["nc"],
 				"priority": 50
 			},
 			{
