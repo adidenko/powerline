@@ -26,7 +26,7 @@ Requirements
 Installation
 ------------
 
-Installations consists of two parts:
+Installation consists of two parts:
 * Installing fonts for terminal emulator (**gnome-shell** or **konsole**) - this should be done on a PC you're going to run terminal emulator on.
 * Installing and configuing **powerline** shell prompt on needed hosts for needed shell users.
 
