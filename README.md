@@ -1,11 +1,24 @@
 powerline
 =========
 
-Powerline configs for gnome-shell. Tested and configured on Ubuntu-13.10.
+Powerline configs for gnome-shell. Tested and configured on **Ubuntu-13.10** under **gnome-shell**.
+Please note, this instruction will not work under any terminal emulator. It's confirmed to work under **gnome-shell** only.
+
+For further info please refer:
+https://powerline.readthedocs.org/en/latest/
+
+Screenshots
+-----------
+* bash shell example:
+![bash shell look1](https://raw.github.com/adidenko/adidenko.github.io/master/images/powerline/powerline_shell.png)
+* bash shell example:
+![bash shell look2](https://raw.github.com/adidenko/adidenko.github.io/master/images/powerline/powerline_shell2.png)
+* vim statusline example:
+![vim look](https://raw.github.com/adidenko/adidenko.github.io/master/images/powerline/powerline_vim.png)
 
 Requirements
 ------------
-* pip (```sudo install python-pip```)
+* pip (```sudo apt-get install python-pip```)
 
 Installation
 ------------
@@ -38,12 +51,17 @@ echo ". $(readlink -f ~/.local/lib/python2.7/site-packages/powerline/bindings/ba
 >> ~/.bashrc
 
 # configure gnome-shell profiles
-
-echo 'term screen-256color' >> ~/.screenrc
+sed -i '1i term screen-256color' ~/.screenrc
 rm -rf /tmp/tmp_powerline && mkdir -p /tmp/tmp_powerline
 git clone --depth 1 https://github.com/adidenko/powerline /tmp/tmp_powerline
 cp -R /tmp/tmp_powerline/{colorschemes,themes,config.json} ~/.config/powerline/
 rm -rf /tmp/tmp_powerline
 ```
 
-That's all.
+Hints
+-----
+If you're not using screen, you may need to set your ```TERM``` env variable to something like this:
+
+```bash
+export TERM=xterm-256color
+```
