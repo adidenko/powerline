@@ -9,13 +9,13 @@ https://powerline.readthedocs.org/en/latest/
 
 Screenshots
 -----------
-* bash shell example 1:
+* bash shell example (running local shell with python virtualenv activated):
 ![bash shell look1](https://raw.github.com/adidenko/adidenko.github.io/master/images/powerline/powerline_shell.png)
-* bash shell example 2:
+* bash shell example (running remote shell via SSH):
 ![bash shell look2](https://raw.github.com/adidenko/adidenko.github.io/master/images/powerline/powerline_shell2.png)
-* vim statusline example 1:
+* vim statusline example (normal mode):
 ![vim look1](https://raw.github.com/adidenko/adidenko.github.io/master/images/powerline/powerline_vim1.png)
-* vim statusline example 2:
+* vim statusline example (replace mode):
 ![vim look2](https://raw.github.com/adidenko/adidenko.github.io/master/images/powerline/powerline_vim2.png)
 
 
