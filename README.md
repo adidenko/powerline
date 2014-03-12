@@ -69,7 +69,7 @@ If you're not using screen, you may need to set your ```TERM``` env variable to 
 export TERM=xterm-256color
 ```
 
-Or you can automate this via ```.bashrc``` file by running the following commands:
+Or you can automate this via ```.bashrc``` file, just run the following commands to add needed lines to your ```.bashrc``` file:
 
 ```bash
 echo 'if [ "$TERM" != "screen-256color" ] ; then' >> ~/.bashrc
