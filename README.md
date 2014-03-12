@@ -2,7 +2,7 @@ powerline
 =========
 
 Powerline configs for gnome-shell. Tested and configured on **Ubuntu-13.10** under **gnome-shell**.
-Please note, this instruction will not work under any terminal emulator. It's confirmed to work under **gnome-shell** only.
+Please note, this instruction (fonts installation part) will not work under any terminal emulator. It's confirmed to work under **gnome-shell**, but it aslo should work under **konsole**.
 
 For further info please refer:
 https://powerline.readthedocs.org/en/latest/
@@ -26,19 +26,29 @@ Requirements
 Installation
 ------------
 
-**Ubuntu 13.10:** Just run the following commands under the user you want to configure powerline for (does not require sudo privileges):
+Installations consists of two parts:
+* Installing fonts for terminal emulator (**gnome-shell** or **konsole**) - this should be done on a PC you're going to run terminal emulator on.
+* Installing and configuing **powerline** shell prompt on needed hosts for needed shell users.
+
+### Installing fonts
+**Ubuntu 13.10:** Just run the following commands under the user you want to configure fonts for (does not require sudo privileges):
 
 ```bash
-pip install --user git+git://github.com/Lokaltog/powerline
-
-# make sure pip install finished successfully, then continue:
-
 mkdir ~/.fonts.conf.d ~/.fonts
 wget -O ~/.fonts/PowerlineSymbols.otf \
 https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
 fc-cache -vf ~/.fonts
 wget -O ~/.fonts.conf.d/10-powerline-symbols.conf \
 https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
+```
+
+### Installing and configuring powerline shell prompt
+On a host you want to enable **powerline** shell prompt run the following commands under needed shell user, this user should have ```bash``` shell (does not require sudo privileges, but requires ```pip```):
+
+```bash
+pip install --user git+git://github.com/Lokaltog/powerline
+
+# make sure pip install finished successfully, then continue:
 
 mkdir ~/.config/powerline
 cp -a ~/.local/lib/python2.7/site-packages/powerline/config_files/* ~/.config/powerline/
@@ -58,19 +68,8 @@ rm -rf /tmp/tmp_powerline && mkdir -p /tmp/tmp_powerline
 git clone --depth 1 https://github.com/adidenko/powerline /tmp/tmp_powerline
 cp -R /tmp/tmp_powerline/{colorschemes,themes,config.json} ~/.config/powerline/
 rm -rf /tmp/tmp_powerline
-```
 
-Hints
------
-If you're not using screen, you may need to set your ```TERM``` env variable to something like this:
-
-```bash
-export TERM=xterm-256color
-```
-
-Or you can automate this via ```.bashrc``` file, just run the following commands to add needed lines to your ```.bashrc``` file:
-
-```bash
+# configure TERM variable to work properly under gnome-shell with and without screen
 echo 'if [ "$TERM" != "screen-256color" ] ; then' >> ~/.bashrc
 echo -e "\texport TERM=xterm-256color\nfi" >> ~/.bashrc
 ```
