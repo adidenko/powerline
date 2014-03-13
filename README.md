@@ -22,6 +22,7 @@ Screenshots
 Requirements
 ------------
 * pip (```sudo apt-get install python-pip```)
+* git (```sudo apt-get install git```)
 
 Installation
 ------------
@@ -75,3 +76,4 @@ rm -rf /tmp/tmp_powerline
 echo 'if [ "$TERM" != "screen-256color" ] ; then' >> ~/.bashrc
 echo -e "\texport TERM=xterm-256color\nfi" >> ~/.bashrc
 ```
+That's it, now you should have **powerline** shell prompt and vim status line.
