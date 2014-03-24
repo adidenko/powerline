@@ -53,7 +53,7 @@ pip install --user git+git://github.com/Lokaltog/powerline
 
 # make sure pip install finished successfully, then continue:
 
-mkdir ~/.config/powerline
+mkdir -p ~/.config/powerline
 cp -a ~/.local/lib/python2.7/site-packages/powerline/config_files/* ~/.config/powerline/
 
 # enable in vim
