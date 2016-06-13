@@ -51,7 +51,6 @@ sudo apt-get install powerline python3-powerline
 * run the following commands under needed shell user, this user should have ```bash``` shell:
 
 ```bash
-sudo apt-get install powerline python3-powerline
 # configure powerline
 sed -i '1i term screen-256color' ~/.screenrc
 git clone https://github.com/adidenko/powerline ~/.config/powerline
