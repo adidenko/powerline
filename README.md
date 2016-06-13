@@ -1,7 +1,7 @@
 powerline
 =========
 
-Powerline configs for gnome-shell. Tested and configured on **Ubuntu-13.10** under **gnome-shell**.
+Powerline configs for gnome-shell. Tested and configured on **Ubuntu-13.10, Ubuntu-14.04** under **gnome-shell**.
 Please note, this instruction (fonts installation part) will not work under any terminal emulator. It's confirmed to work under **gnome-shell**, but it aslo should work under **konsole**.
 
 For further info please refer:
@@ -32,7 +32,7 @@ Installation consists of two parts:
 * Installing and configuing **powerline** shell prompt on needed hosts for needed shell users.
 
 ### Installing fonts
-**Ubuntu 13.10:** Just run the following commands under the user you want to configure fonts for (does not require sudo privileges):
+**Ubuntu 14.04:** Just run the following commands under the user you want to configure fonts for (does not require sudo privileges):
 
 ```bash
 mkdir ~/.fonts.conf.d ~/.fonts
