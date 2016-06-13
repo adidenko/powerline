@@ -40,24 +40,25 @@ sudo apt-get install fonts-powerline
 You may need to restart your terminal emulator in order to apply changes.
 
 ### Installing and configuring powerline shell prompt
-On a host you want to enable **powerline** shell prompt run the following commands under needed shell user, this user should have ```bash``` shell:
+On a host you want to enable **powerline** shell prompt:
+
+* install packages:
 
 ```bash
 sudo apt-get install powerline python3-powerline
 
-mkdir -p ~/.config/powerline
+* run the following commands under needed shell user, this user should have ```bash``` shell:
+# configure powerline
+sed -i '1i term screen-256color' ~/.screenrc
+git clone https://github.com/adidenko/powerline ~/.config/powerline
 
 # enable in vim
 echo "set laststatus=2" >> ~/.vimrc
 echo -e "python3 from powerline.vim import setup as powerline_setup" >> ~/.vimrc
 echo -e "python3 powerline_setup()\npython3 del powerline_setup" >> ~/.vimrc
 
-# enable in bash
+# enable in shell
 echo ". /usr/share/powerline/bindings/bash/powerline.sh" >> ~/.bashrc
-
-# configure powerline
-sed -i '1i term screen-256color' ~/.screenrc
-git clone https://github.com/adidenko/powerline ~/.config/powerline
 
 # configure TERM variable to work properly under gnome-terminal with and without screen
 echo 'if [ "$TERM" != "screen-256color" ] ; then' >> ~/.bashrc
