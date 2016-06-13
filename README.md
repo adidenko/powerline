@@ -31,15 +31,10 @@ Installation consists of two parts:
 * Installing and configuing **powerline** shell prompt on needed hosts for needed shell users.
 
 ### Installing fonts
-**Ubuntu 16.04:** Just run the following commands under the user you want to configure fonts for (does not require sudo privileges):
+**Ubuntu 16.04:**
 
 ```bash
-mkdir ~/.fonts.conf.d ~/.fonts
-wget -O ~/.fonts/PowerlineSymbols.otf \
-https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
-fc-cache -vf ~/.fonts
-wget -O ~/.fonts.conf.d/10-powerline-symbols.conf \
-https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
+sudo apt-get install fonts-powerline
 ```
 
 You may need to restart your terminal emulator in order to apply changes.
@@ -60,12 +55,9 @@ echo -e "python3 powerline_setup()\npython3 del powerline_setup" >> ~/.vimrc
 # enable in bash
 echo ". /usr/share/powerline/bindings/bash/powerline.sh" >> ~/.bashrc
 
-# configure gnome-terminal profiles
+# configure powerline
 sed -i '1i term screen-256color' ~/.screenrc
-rm -rf /tmp/tmp_powerline && mkdir -p /tmp/tmp_powerline
-git clone --depth 1 https://github.com/adidenko/powerline /tmp/tmp_powerline
-cp -R /tmp/tmp_powerline/{colorschemes,themes,config.json,colors.json} ~/.config/powerline/
-rm -rf /tmp/tmp_powerline
+git clone https://github.com/adidenko/powerline ~/.config/powerline
 
 # configure TERM variable to work properly under gnome-terminal with and without screen
 echo 'if [ "$TERM" != "screen-256color" ] ; then' >> ~/.bashrc
