@@ -1,5 +1,5 @@
 {
-	"name": "Default color scheme",
+	"name": "Gnome shell color scheme",
 	"groups": {
 		"background":               { "fg": "white", "bg": "gray2" },
 		"background:divider":       { "fg": "gray6", "bg": "gray2" },
@@ -65,17 +65,17 @@
 		},
 		"v": {
 			"groups": {
-				"mode": { "fg": "white", "bg": "yellow", "attr": ["bold"] }
+				"mode": { "fg": "white", "bg": "mediumorange", "attr": ["bold"] }
 			}
 		},
 		"V": {
 			"groups": {
-				"mode": { "fg": "white", "bg": "yellow", "attr": ["bold"] }
+				"mode": { "fg": "white", "bg": "mediumorange", "attr": ["bold"] }
 			}
 		},
 		"^V": {
 			"groups": {
-				"mode": { "fg": "white", "bg": "yellow", "attr": ["bold"] }
+				"mode": { "fg": "white", "bg": "mediumorange", "attr": ["bold"] }
 			}
 		},
 		"R": {

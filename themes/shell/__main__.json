@@ -9,7 +9,7 @@
 			"args": {
 				"dir_limit_depth": 3,
         "dir_shorten_len": false,
-        "use_path_separator": false,
+        "use_path_separator": true,
         "shorten_home": true
 			}
 		}
