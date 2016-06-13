@@ -46,8 +46,12 @@ On a host you want to enable **powerline** shell prompt:
 
 ```bash
 sudo apt-get install powerline python3-powerline
+```
 
 * run the following commands under needed shell user, this user should have ```bash``` shell:
+
+```bash
+sudo apt-get install powerline python3-powerline
 # configure powerline
 sed -i '1i term screen-256color' ~/.screenrc
 git clone https://github.com/adidenko/powerline ~/.config/powerline
@@ -64,4 +68,5 @@ echo ". /usr/share/powerline/bindings/bash/powerline.sh" >> ~/.bashrc
 echo 'if [ "$TERM" != "screen-256color" ] ; then' >> ~/.bashrc
 echo -e "\texport TERM=xterm-256color\nfi" >> ~/.bashrc
 ```
+
 That's it, now you should have **powerline** shell prompt and vim status line.
